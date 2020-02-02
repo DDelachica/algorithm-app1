@@ -1,0 +1,143 @@
+// -Chapter 1 - Fundamentals-
+// Settings and Swapping
+var myNumber = 42;
+var myName = "Daniel";
+var temp; 
+
+temp = myNumber;
+myNumber = myName;
+myName = temp;
+
+console.log("myNumber is " + myNumber);
+console.log("myName is " + myName);
+
+// Print -52 to 1066
+for (var num = -52; num < 1067; num = num + 1)
+{
+  console.log(num);
+}
+
+// Don't Worry, Be Happy
+function beCheerful()
+{
+  for (var num = 1; num <99; num++)
+  {
+  console.log (num + ":good morning!");
+  }
+} 
+beCheerful();
+
+// Multiples of Three - but Not All
+for (var num = -300; num < 3; num = num + 3)
+  {
+      if (num == -3 || num == -6)
+        {
+          continue;
+        }
+    console.log(num);
+  }
+
+// Printing Integers with While
+var num = 2000;
+while (num < 5281)
+  {
+    console.log(num);
+    num++;
+  }
+
+// You Say it's Your Birthday
+function myBirthday(month, day)
+  { 
+    if (month === 9 || month === 11 || day === 11 || day === 9)
+      {
+        console.log("How did you know?");
+      }
+    else 
+      { 
+        console.log("Just another day");
+      }
+  }
+myBirthday(9, 11);
+myBirthday(1, 2);
+
+//Leap Year
+function leapYear(yr){
+  if(((yr % 4 == 0) && (yr % 100 !=0)) || (yr % 400 == 0 ))  {
+        console.log(yr+ ' is a leap year.')
+  }
+  else{
+    console.log(yr+ ' is not a leap year.')
+  }
+  
+}
+leapYear(2021);
+leapYear(2020);
+
+// Print and Count 
+var sum = 0;
+  for(var i = 512; i < 4096; i++){
+    if(i%5 ==0){
+    console.log(i);
+    sum = sum + 1
+     
+    }
+  }
+ console.log(sum)
+
+// Multiples of Six
+var num6 = 6;
+while (num6 < 60006){
+  if (num6 == 60006){
+    break;
+  }
+  console.log(num6);
+  num6= num6 + 6;
+}
+
+// Counting, the Dojo Way
+for (var i = 1; i < 101; i++){
+  if(i%5 == 0 && i%10 !=0 ){
+    var coding = "Coding"
+    console.log(coding);
+  }
+    if(i%10 == 0){
+        console.log(coding + " Dojo");
+     }
+
+  else{
+   
+  console.log(i);
+}
+}
+   
+// What Do You Know?
+function wdyk(incoming){
+  console.log(incoming);
+}
+wdyk();
+
+// Whoa, That Sucker's Huge...
+var sum = 0;
+for(var i = -300000; i < 300001; i++){
+  if(i%2 !== 0){
+    sum = sum + i;
+  }
+}
+console.log(sum);  
+
+// Countdown by Fours
+var num = 2016
+while (num > 0){
+  if (num == 0){
+    break;
+  }
+console.log(num);
+  num = num - 4;
+}
+
+// Flexible Countdown
+
+// The Final Countdown
+
+// ******Pg. 20*******
+// 
